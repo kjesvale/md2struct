@@ -1,0 +1,17 @@
+{
+    "name": "md2struct",
+    "version": "1.0.0",
+    "description": "Converts a markdown file to a structured text file in JSON.",
+    "main": "md2struct.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "convert": "node md2struct.js && yarn run format-output",
+        "format": "yarn run prettier --write md2struct.js",
+        "format-output": "yarn run prettier --write output.json"
+    },
+    "author": "Kjetil Svalestuen",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^1.14.3"
+    }
+}
